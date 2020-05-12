@@ -12,27 +12,38 @@
     <script src="./library.js"></script>
     <script src="./line.js"></script>
 </head>
-<body  style="width: 100%; text-align: center;">
-    <div class="container">
-        <br/>
-        <h2 id="title">New Reciever</h2>
-        <hr/>
+<body>
+
+    <div class="logo">
+        <img src="./ccovid19.jpeg" style="width: 92px; height: 86px; margin-left:30px;" />
+
+        <a href="index.html" class="nav">BACK</a>
+
+    </div>
+    <div class="imgCont">
+        <div class="container">
+            <div class="mag"></div>
+            <h2 id="title">New Reciever</h2>
+        </div>
+    </div>
+
+    <div class="container mycon">
 
         <div style="text-align: center;" id="qrcontainer"></div>
         <div id="userForm">
-            <input type="text" id="userName" placeholder="Names (First and Surmname)" class="form-control"/>
-            <br/>
-            <input type="tel" id="userTel" placeholder="Tel. No." class="form-control"/>
-            <br/>
+            <input type="text" id="userName" placeholder="Names (First and Surmname)" class="form-control" />
+            <br />
+            <input type="tel" id="userTel" placeholder="Tel. No." class="form-control" />
+            <br />
             <button onclick="solve()" class="btn btn-success">Generate QR</button>
             <button onclick="createReceivers()" style="display: none;" id="saveRx"></button>
         </div>
-        <br/>
-        <br/>
-        <br/>
-        <hr/>
+        <br />
+        <br />
+        <br />
+        <hr />
         <button onclick="newSolve()" class="btn btn-info">New</button>
     </div>
-    
+
 </body>
 </html>

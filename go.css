@@ -4,9 +4,45 @@ table, td, th{
     
 }
 
-
-
 .mycon{
-    background-color: gainsboro;
-    
+    margin-top: 60px;
+}
+
+.logo{
+    width:100%;
+    align-content: flex-start;
+}
+.imgCont{
+    height: 200px;
+    width:100%;
+    padding-top:70px;
+    background: #2f2e2e;
+    color: #fff;
+}
+
+.imgContTxt{
+    color: #ff0000;
+}
+.mag {
+    width: 100px;
+    height: 10px;
+    background: #ff0000;
+}
+
+.nav {
+    color: #000;
+    transition: color 0.4s ease 0s;
+    float: right;
+    margin: 30px;
+    padding: 5px;
+    cursor:pointer;
+    font-weight:bold;
+    font-size: large;
+    border-radius: 5px;
+}
+
+.nav:hover{
+    text-decoration:none;
+    background:#ff0000;
+    color:#fff;
 }
