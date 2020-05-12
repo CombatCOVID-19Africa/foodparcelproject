@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <title>Food Distribution</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <script type="text/javascript"
+    src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyDI7RojJ2FtogoF8eylYTToeWHloVrDtSU&libraries=geometry&sensor=false"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-database.js"></script>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./go.css">
+    <script src="./bootstrap.min.js"></script>
+    <script src="./line.js"></script>
+</head>
+<body style="text-align: center;" onload="loadFromDb()">
+    
+    <div class="container mycon" >
+        <img src="./ccovid19.jpeg" style="width: 128px; float: right;" />
+        <h1>Food Currently in Circulation</h1>
+        <hr/>
+        <table id="resList" style="width: 100%;">
+            <tr>
+                <th>Date</th>
+                <th>Location</th>
+                <th>Officer</th>
+                <th>Phone</th>
+                <th>Food Items</th>
+            </tr>
+        </table>
+
+        <div class="footer">
+            <hr/>
+            <a href="http://www.combatcovid-19.africa/">
+                <h4>Powered by: <span style="color: brown;">combatcovid-19.africa</span> </h4>
+            </a>
+        </div>
+    </div>
+</body>

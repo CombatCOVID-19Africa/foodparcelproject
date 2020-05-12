@@ -1,0 +1,11 @@
+
+table, td, th{
+    border: 1px solid red;
+    
+}
+
+body{
+    background-color: rgba(255,105,108,0.3);
+    
+    
+}
