@@ -1,23 +1,52 @@
 <!DOCTYPE html>
+<html oncontextmenu="return false">
 <head>
-    <title>Food Distribution</title>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <title>Food Circulation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <script type="text/javascript"
-    src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyDI7RojJ2FtogoF8eylYTToeWHloVrDtSU&libraries=geometry&sensor=false"></script>
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDI7RojJ2FtogoF8eylYTToeWHloVrDtSU&libraries=geometry&sensor=false"></script>
     <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-database.js"></script>
     <link rel="stylesheet" href="./bootstrap.min.css">
     <link rel="stylesheet" href="./go.css">
     <script src="./bootstrap.min.js"></script>
     <script src="./line.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function check(form) {
+            if (form.userid.value == "admin" && form.pswrd.value == "123") {
+                window.open('admin/distributor.html')
+            }
+            else {
+                alert("The username and password you entered don't match.")
+            }
+        }
+    </script>
 </head>
-<body onload="loadFromDb()">
-    
+<body oncontextmenu="return false" onload="loadFromDb()">
+
     <div class="logo">
         <img src="./ccovid19.jpeg" style="width: 92px; height: 86px; margin-left:30px;" />
 
-        <a href="http://www.combatcovid-19.africa/" class="nav">HOME</a>
-        
+        <!--<a href="admin/distributor.html" class="nav">ADMIN</a>-->
+        <t onclick="myFunction()" class="lnkbut">ADMIN</t>
+        <div class="container" id="myDIV">
+            <form name="login">
+                <div class="form-group log">
+                    <input type="text" placeholder="username" name="userid" />
+                    <input type="password" placeholder="password" name="pswrd" />
+                    <input type="button" class="but" onclick="check(this.form)" value="Login" />
+                </div>
+            </form>
+        </div>
     </div>
     <div class="imgCont">
         <div class="container">
@@ -26,10 +55,10 @@
         </div>
     </div>
 
-    <div class="container mycon" >
+    <div class="container mycon">
         <!--<img src="./ccovid19.jpeg" style="width: 128px; float: right;" />
         <h1>Food Currently in Circulation</h1>-->
-        <hr/>
+        <hr />
         <table id="resList" style="width: 100%;">
             <tr>
                 <th>Date</th>
@@ -41,10 +70,11 @@
         </table>
 
         <div class="footer">
-            <hr/>
+            <hr />
             <a href="http://www.combatcovid-19.africa/">
                 <h4>Powered by: <span style="color: brown;">combatcovid-19.africa</span> </h4>
             </a>
         </div>
     </div>
 </body>
+</html>

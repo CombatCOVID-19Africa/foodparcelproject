@@ -46,3 +46,41 @@ table, td, th{
     background:#ff0000;
     color:#fff;
 }
+
+.but {
+    border-radius: 10px;
+    background: #ff0000;
+}
+.but:hover{
+    background: #ff6a00;
+    cursor:pointer;
+    color: #fff;
+}
+
+#myDIV{
+    display: none;
+}
+
+.lnkbut {
+    color: #000;
+    transition: color 0.4s ease 0s;
+    float: right;
+    margin: 30px;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 5px;
+    background: Transparent;
+}
+
+.lnkbut:hover{
+    border: none;
+    color: #fff;
+    background: #ff6a00;
+    cursor: pointer;
+}
+
+.lnkbut:visited{
+    background: red;
+}
