@@ -1,8 +1,8 @@
 var config = {
-    apiKey: "AIzaSyDXVnBFPszwI1cX0l_NaVxI3E79AFzsjoc",
-    databaseURL: "https://satellite-1b48f.firebaseio.com/",
-    projectId: "satellite-1b48f",
-    storageBucket: "gs://satellite-1b48f.appspot.com/",
+    apiKey: "API-KEY",
+    databaseURL: "database-url",
+    projectId: "project-id",
+    storageBucket: "gs://project-id",
     messagingSenderId: "Semiu"
   };
   firebase.initializeApp(config);
