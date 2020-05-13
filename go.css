@@ -48,8 +48,7 @@ table, td, th{
 }
 
 .but {
-    border-radius: 10px;
-    background: #ff0000;
+    border-radius: 5px;
 }
 .but:hover{
     background: #ff6a00;
